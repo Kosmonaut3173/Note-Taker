@@ -3,11 +3,13 @@ const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 const fs = require('fs');
 
+// GET route for retrieving notes
 notesRouter.get('/', (req, res) => {
     readFromFile('./db/db.json')
     .then((data) => res.json(JSON.parse(data)));
 });
 
+// POST route for new note
 notesRouter.post('/', (req, res) => {
     const { title, text } = req.body;
 
