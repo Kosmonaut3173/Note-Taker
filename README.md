@@ -16,6 +16,9 @@ If opening from terminal:
 ![emptyPage](./public/assets/images/emptyNoteTaker.png)
 ![notes](./public/assets/images/notes.png)
 
+## Credits
+Thank you Phillip Loy, my tutor, for your assistance with this assignment
+
 ## Links
 * GitHub: https://kosmonaut3173.github.io/Note-Taker/
 
