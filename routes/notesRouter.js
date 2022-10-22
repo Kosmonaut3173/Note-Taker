@@ -28,7 +28,7 @@ notesRouter.post('/', (req, res) => {
     console.log('Note Saved');
 })
 
-// DELETE route
+// DELETE route to get rid of note
 notesRouter.delete('/:id', (req, res) => {
     let db = JSON.parse(fs.readFileSync('db/db.json'));
     let filteredNote = db.filter((item) => item.id !== req.params.id);
